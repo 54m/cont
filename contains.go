@@ -5,11 +5,11 @@ import (
 	"strings"
 )
 
-func Contains(obj, target interface{}) bool {
+func Contains(target, obj interface{}) bool {
 	targetValue := reflect.ValueOf(target)
 	switch reflect.TypeOf(target).Kind() {
 	case reflect.String:
-		if strings.Contains(obj.(string), target.(string)) {
+		if strings.Contains(target.(string), obj.(string)) {
 			return true
 		}
 	case reflect.Slice, reflect.Array:
