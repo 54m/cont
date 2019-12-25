@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func Contains(target, obj interface{}) bool {
+func Contains(target, obj interface{}) (_ bool) {
 	targetValue := reflect.ValueOf(target)
 	switch reflect.TypeOf(target).Kind() {
 	case reflect.String:
@@ -23,6 +23,5 @@ func Contains(target, obj interface{}) bool {
 			return true
 		}
 	}
-
-	return false
+	return
 }
