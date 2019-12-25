@@ -6,5 +6,10 @@ Easy Contains
 []string{"1", "2", "3"}の中に"1"が含まれているか知りたい時は自前実装しないといけない
 そんな時に一つにまとめられていて少しでも使えるものを作りました。
 
+# 導入
+```commandline
+go get -u github.com/54mch4n/cont
+```
+
 # ライセンス
 MIT
