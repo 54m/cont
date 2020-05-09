@@ -19,7 +19,17 @@ func Contains(target, obj interface{}) bool {
 			}
 		}
 	case reflect.Map:
-		return targetValue.MapIndex(reflect.ValueOf(obj)).IsValid()
+		iter := targetValue.MapRange()
+		for iter.Next() {
+			k := iter.Key().Interface()
+			v := iter.Value().Interface()
+			if k == obj {
+				return true
+			}
+			if v == obj {
+				return true
+			}
+		}
 	}
 	return false
 }
