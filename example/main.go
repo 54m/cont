@@ -1,29 +1,39 @@
 package main
 
 import (
-	"fmt"
+	"log"
+	"time"
 
-	. "github.com/54mch4n/cont"
+	"github.com/54mch4n/cont"
 )
 
 func main() {
 	var (
+		now = time.Now()
 		ex1 = []string{"1", "2", "3"}
 		ex2 = []int{1, 2, 3}
 		ex3 = "123"
+		ex4 = map[string]interface{}{"a": "1", "b": "2", "c": "3", "d": now}
 	)
 
-	fmt.Println(ex1, ex2, ex3)
+	log.Println(ex1)
+	log.Println(ex2)
+	log.Println(ex3)
+	log.Println(ex4)
 
-	if Contains(ex1, "1") {
-		fmt.Println("ex1: OK!")
+	if cont.Contains(ex1, "1") {
+		log.Println("ex1: OK!")
 	}
 
-	if Contains(ex2, 1) {
-		fmt.Println("ex2: OK!")
+	if cont.Contains(ex2, 1) {
+		log.Println("ex2: OK!")
 	}
 
-	if Contains(ex3, "1") {
-		fmt.Println("ex3: OK!")
+	if cont.Contains(ex3, "1") {
+		log.Println("ex3: OK!")
+	}
+
+	if cont.Contains(ex4, now) {
+		log.Println("ex4: OK!")
 	}
 }
