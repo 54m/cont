@@ -5,6 +5,8 @@ import (
 	"strings"
 )
 
+// Contains returns true if there is something in the target
+//   └── Supports type: string, slice, array, map
 func Contains(target, obj interface{}) (_ bool) {
 	targetValue := reflect.ValueOf(target)
 	switch reflect.TypeOf(target).Kind() {
