@@ -1,3 +1,6 @@
+/*
+Package cont - Checks if the target is contained in a string, slice or map
+*/
 package cont
 
 import (
@@ -6,7 +9,7 @@ import (
 )
 
 // Contains returns true if there is something in the target
-//   └── Supports type: string, slice, array, map
+// supports type: string, slice, array, map
 func Contains(target, obj interface{}) bool {
 	targetValue := reflect.ValueOf(target)
 	switch reflect.TypeOf(target).Kind() {
