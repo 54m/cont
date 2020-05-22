@@ -1,3 +1,3 @@
-module github.com/54mch4n/cont
+module github.com/54m/cont
 
 go 1.12

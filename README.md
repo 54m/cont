@@ -8,9 +8,9 @@ Easy Contains
 
 # 導入
 ```commandline
-go get -u github.com/54mch4n/cont
+go get -u github.com/54m/cont
 ```
-[Example](https://github.com/54mch4n/cont/blob/master/example/main.go)
+[Example](https://github.com/54m/cont/blob/master/example/main.go)
 
 # ライセンス
 MIT

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/54mch4n/cont"
+	"github.com/54m/cont"
 )
 
 func main() {

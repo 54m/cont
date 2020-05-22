@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/54mch4n/cont"
+	"github.com/54m/cont"
 )
 
 func TestContains(t *testing.T) {
